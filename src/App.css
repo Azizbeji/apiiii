@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.518);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.644);
+}
+::-webkit-scrollbar-track {
+  background-color: #1c1c21;
+}
+
+body {
+  margin: 0;
+}
+.App {
+  font-family: "Quicksand", sans-serif;
+  font-size: large;
+  background-image: url("https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139104.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  transition: gap 0.6s;
+  padding-right: 180px;
+}
+.ListWrapper {
+  margin: 10px ;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.UserItem {
+  background-color: rgba(255, 234, 234, 0.651);
+    display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 13px 0;
+  padding: 7px;
+
+
+}
+.UsersList{
+  border-radius: 15px;
+  background-color: rgba(240, 248, 255, 0.58);
+  margin: 50px;
+
+}
+.UserItem img {
+  border-radius: 42%;
+}
+.UserItem:hover {
+  box-shadow: 0px 0px 20px rgba(23, 15, 15, 0.45);
+  background-color: rgba(30, 255, 165, 0.8);
+  border: 1 px black solid;
+}
+.UsersDetails {
+  border-radius: 100px;
+  padding: 30px;
+  width: 350px;
+  height: 370px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+  display: flex;
+  flex-direction: column;
+  color:azure;
+}
+.UsersDetails:hover{
+  box-shadow: 0px 0px 50px rgba(23, 15, 15, 0.45);
+}
+
+.UsersDetails h3,
+.UsersDetails h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.UsersDetails svg {
+  width: 20px;
+  height: 20px;
+  margin: 15px 0;
+}
+#loadingAnimation {
+  width: 100%;
+  margin: 30% 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 850px) {
+  .App{
+    gap: 30px
+  }
+}
